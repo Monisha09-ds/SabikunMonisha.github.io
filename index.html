@@ -100,7 +100,50 @@
 }
 
 
-/* project image zoom effect */
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+/*======================================
+//--//-->   RESPONSIVE OVERRIDES
+======================================*/
+
+@media (max-width: 767.98px) {
+  #typing-animation {
+    font-size: 20px !important;
+  }
+  .hero .text h1 {
+    font-size: 30px !important;
+  }
+  .career-obj-text {
+    font-size: 18px !important;
+  }
+  .resume-wrap {
+    margin-bottom: 30px;
+  }
+  .about-mf .about-img img {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-brand {
+    font-size: 18px;
+  }
+}
+
+.table-responsive-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.career-obj-text {
+  font-size: 25px;
+  line-height: 1.7;
+  color: #e0e0e0;
+  margin: 0;
+}
 
 .zoom-effect {
   overflow: hidden;
@@ -219,10 +262,10 @@
 			<div class="row justify-content-center">
 				<div class="col-md-12 text-left">
 					<h2 class="mb-4"><b>Career Objective</b></h2>
-					<p style="font-size: 25px; line-height: 1.7; color: #e0e0e0; margin: 0;">
-						<strong>I want to work as an Applied AI Engineer</strong> with strong backend and DevOps orientation, focused on
-						designing, deploying, and scaling production-grade AI systems. Passionate about building
-						automated, reliable, and maintainable AI-driven backend platforms that integrate
+					<p class="career-obj-text">
+						<strong>My goal is to work as an Applied AI Engineer</strong> on projects where I can contribute and learn, with a strong backend and DevOps orientation focused on
+						building scalable production-grade AI systems. I am passionate about building
+						automated and maintainable AI-driven systems that integrate
 						<strong>Generative AI</strong> and <strong>cloud-native DevOps practices</strong>.
 					</p>
 				</div>
@@ -256,7 +299,7 @@
 									</div>
 								  </div>
 
-								<div class="skill-mf">
+								<div class="skill-mf" style="margin-top: 2rem;">
 									<p class="title-s">Skills</p>
 									<span>Python</span> <span class="pull-right"></span>
 									<div class="progress">
@@ -371,8 +414,13 @@
 								
 								<h1 class="big">About</h1>
 								<h2 class="mb-4">About Me</h2>
-								<!-- <p>I am currently employed as a Data Engineer at an AI-focused IT company.</p> -->
-								<p>I am currently working at <b>Mediusware Ltd.</b> as a <b>Jr AI Engineer</b>.<br>I have completed my studies from <b>Institute of Information Technology, Jahangirnagar University</b>. I am driven by a passion for learning new concepts and exploring innovative approaches to apply and present them. My experience with content creation and various projects work has expanded my expertise in the following domain Machine Learning, Deep Learning, Natural Language Processing (NLP), and Generative AI.<br>My goal is to integrate AI with Data Science to uncover insights, enhance analytics, and drive impactful business solutions</p>
+								
+								<!-- <p>I am currently working at <b>Mediusware Ltd.</b> as a <b>Jr AI Engineer</b>.<br>I have completed my studies from <b>Institute of Information Technology, Jahangirnagar University</b>. I am driven by a passion for learning new concepts and exploring innovative approaches to apply and present them. My experience with content creation and various projects work has expanded my expertise in the following domain Machine Learning, Deep Learning, Natural Language Processing (NLP), and Generative AI.<br>My goal is to integrate AI with Data Science to uncover insights, enhance analytics, and drive impactful business solutions</p> -->
+								 <p>I am currently working at Mediusware Ltd. as a Software Engineer(I) in AI/ML domain. I build and improve backend-driven AI systems for real-world applications.I have hands-on experience working on both standalone AI applications and integrating AI-based features into existing software systems. My work focuses on designing RAG pipelines, multi-agent workflows, scalable APIs, and AI-powered backend services using technologies such as FastAPI, LangChain, LangGraph, vector databases, and modern LLM frameworks.
+
+I have completed my BSc in Information Technology from the Institute of Information Technology, Jahangirnagar University. Through my professional work, research involvement, and mentorship activities, I have developed practical experience in Machine Learning, Deep Learning, Natural Language Processing, and Generative AI.
+
+I am particularly interested in building maintainable and production-ready AI systems that combine back.</p>
 								<ul class="about-info mt-4 px-md-0 px-2">
 									<!-- <li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li> -->
 									<li class="d-flex"><span>Domain:</span> <span>Information Technology </span></li>
@@ -385,7 +433,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="skill-mf">
+						<div class="skill-mf" style="margin-top: 2rem;">
 							<p class="title-s"><b>Frameworks -- Python and Generative AI </b></p>
 							<span>Flask,FastAPI,Django,Streamlit</span> <span class="pull-right"></span>
 								<div class="progress">
@@ -458,11 +506,11 @@
 		<br>
 		
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-6 col-lg-6">
 				<div class="resume-wrap ftco-animate">
 					<span class="date">February 2025 - Present</span>
 					<!-- <h2>Machine Learning Engineer</h2> -->
-					<h3><b>Company Name :</b><a href="https://mediusware.com/"> Mediusware</a></h3>
+					<h3><b>Company Name :</b> <a href="https://mediusware.com/"> Mediusware</a></h3>
 					<span class="position">Junior AI  Engineer</span>
 					<p class="mt-4">researching, building,
 						and designing the artificial intelligence responsible for machine learning and
@@ -476,25 +524,9 @@
 				</div>
 			</div>
 		
-			<div class="col-md-4">
-				<div class="resume-wrap ftco-animate">
-					<span class="date">July 2024 - Present</span>
-					<!-- <h2>Machine Learning Engineer</h2> -->
-					<h3><b>Company Name :</b><a href="https://www.shebamart.com.bd/"> Sheba Mart Online</a></h3>
-					<span class="position">Machine Learning Engineer</span>
-					<p class="mt-4">researching, building,
-						and designing the artificial intelligence responsible for machine learning and
-						maintaining and improving existing artificial intelligence systems.
-						<ul>
-							<li>Part Time</li>
-							<li>Remote</li>
-							<!-- <li>ed to 20% MoM increase in the conversion rate.</li> -->
-						</ul>
-					</p>
-				</div>
-			</div>
+			
 
-			<div class="col-md-4">
+			<div class="col-md-6 col-lg-6">
 				<div class="resume-wrap ftco-animate">
 					<span class="date">March 2024 - Present</span>
 					<h2>Online Mentorship & Research Work</h2>
@@ -512,11 +544,11 @@
 				</div>
 			</div>
 
-			<div class="col-md-5">
+			<div class="col-md-6 col-lg-6">
 				<div class="resume-wrap ftco-animate">
 					<span class="date">August 2024 - December 2024 </span>
 					<!-- <h2>Machine Learning Engineer</h2> -->
-					<h3><b>Company Name : </b><a href="https://www.sociofi.io/">SocioFi Technology</a></h3>
+					<h3><b>Company Name : </b> <a href="https://www.sociofi.io/">SocioFi Technology</a></h3>
 					<span class="position">Data Engineer</span>
 					<p class="mt-4">Design, build, and maintain data pipelines for collecting, processing, and storing
 						large datasets for fine-tuning the Large Language Model.
@@ -529,11 +561,10 @@
 				</div>
 			</div>
 
-			<div class="col-md-5">
+			<div class="col-md-6 col-lg-6">
 				<div class="resume-wrap ftco-animate">
-
 					<span class="date">Oct 2023 - 2024 Feb</span>
-					<h3><b>Website Name :</b><a href="https://safenetai-research.onrender.com/">  SafeNet AI</a></h3>
+					<h3><b>Website Name :</b> <a href="https://safenetai-research.onrender.com/"> SafeNet AI</a></h3>
 					<h2>Data Scrapping and Research Worker </h2>
 					<!-- <span class="position">Merkle</span> -->
 					<p class="mt-4"> Collecting data for a research paper <b>"Sentiment Analysis on Bengali Social Media Comments."</b>
@@ -628,12 +659,12 @@
 		  </div>
 		  
 		  <div class="row d-flex">
-			<ul>
-			<li>
+			<ol>
+			<!-- <li>
 				<h3><b>1 .</b>NutriGuide: Calorie Tracker & Personalized Diet Planner</h3>
 				<a href="https://github.com/Monisha09-ds/Gemini_Calorie_App.git">GitHub Link</a>
 				<p> NutriGuide is a web-based application designed to identify the nutrition value of food-image and offering personalized diet recommendations.</p>
-			</li>
+			</li> -->
 			<!-- <li>
 				<h3><b>2 .</b>Data Chatbot: Interactive CSV, PDF, and URL Exploration</h3>
 				<a href="https://github.com/Monisha09-ds/PDF_Summarizer.git">GitHub Link</a>
@@ -650,7 +681,7 @@
 				<p>ClientConnect AI is a client interaction and management system designed to streamline client communication. The system engages in live chats with clients, captures relevant information during the conversation, generates concise summaries, and drafts personalized emails for follow-up or management purposes.</p>
 			</li>-->
 			<li>
-				<h3><b>2.</b> AI Sales Assistance: Multi-Agent Workflow Automation</h3>
+				<h3><b>1.</b> AI Sales Assistance: Multi-Agent Workflow Automation</h3>
 				<!-- <a href="https://github.com/Monisha09-ds/AI-Sales-Assistance">GitHub Link</a> -->
 				<p>Designed and deployed a multi-agent system to automate workflows in the vehicle dealership domain via chatbot. 
 				Built agents for inventory extraction, FAQ answering (RAG), trade-in price estimation, call scheduling, and 
@@ -659,15 +690,15 @@
 			</li>
 
 			<li>
-				<h3><b>3.</b> Multimodal RAG Chatbot: Image, Text & Voice Query System</h3>
-				<a href="https://github.com/Monisha09-ds/multimodal.git">GitHub Link</a>
+				<h3><b>2.</b> Multimodal RAG Chatbot: Image, Text & Voice Query System</h3>
+				<!-- <a href="https://github.com/Monisha09-ds/multimodal.git">GitHub Link</a> -->
 				<p>Developed a chatbot capable of handling multimodal queries (text + image + voice) across structured and 
 				unstructured data. Integrated speech-to-text and TTS, and implemented re-ranking models for enhanced response accuracy.</p>
 				<p><b>Technologies:</b> Hugging Face (Gemma, Whisper, Kokoro), LangChain, RAG</p>
 			</li>
 
 			<li>
-				<h3><b>4.</b> Habit Tracker AI: Personality-Aware Productivity Coach</h3>
+				<h3><b>3.</b> Habit Tracker AI: Personality-Aware Productivity Coach</h3>
 				<!-- <a href="https://github.com/Monisha09-ds/Habit-Tracker-AI">GitHub Link</a> -->
 				<p>Created a personality-aware habit tracking application that identifies user traits through guided questions. 
 				Implemented a 21-day cycle with reward-based motivation and deployed as a scalable AI service.</p>
@@ -675,18 +706,18 @@
 			</li>
 
 			<li>
-				<h3><b>5.</b> Web Scraper Pipeline: Scalable ETL for Unstructured Data</h3>
+				<h3><b>4.</b> Web Scraper Pipeline: Scalable ETL for Unstructured Data</h3>
 				<a href="https://github.com/Monisha09-ds/Webscraping_Pipeline.git">GitHub Link</a>
 				<p>Built a recursive web scraping and ETL pipeline for unstructured data. Automated data scraping, cleaning, 
 				and structuring into knowledge-ready formats, enabling future chatbot and AI integration.</p>
 				<p><b>Technologies:</b> Crawl4AI, FastAPI</p>
 			</li>
 
-			<li>
-				<h3><b>6.</b>ClientConnect AI</h3>
+			<!-- <li>
+				<h3><b>.</b>ClientConnect AI</h3>
 				<a href="https://github.com/Monisha09-ds/RMG_Deployment.git">GitHub Link</a>
 				<p>ClientConnect AI is a client interaction and management system designed to streamline client communication. The system engages in live chats with clients, captures relevant information during the conversation, generates concise summaries, and drafts personalized emails for follow-up or management purposes.</p>
-			</li>
+			</li> -->
 			<!-- <li> 
 				<h3><b>5 .</b>Source Code Analysis with LLM</h3>
 				<a href="https://github.com/Monisha09-ds/Source_Code_Analysis-Using-LLM.git">GitHub Link</a>
@@ -813,7 +844,7 @@
 		</div>
 		
 		
-		<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="domain-work">
+		<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="domain-work" style="padding-top: 50px !important; padding-bottom: 50px !important;">
 			<div class="container">
 			  <div class="row d-md-flex align-items-center">
 				
@@ -834,14 +865,14 @@
 					</div>
 				  </div>
 				</div>
-				 <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+				 <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 					<div class="block-18">
 					  <div class="text">
 						<span><h3>Generative AI</h3></a></span>
 						<!-- <p><a href="https://drive.google.com/drive/folders/1OjcqvpAY_9HSjTcn3Ik47SkE_C6Y9Rp0?usp=drive_link" class="btn btn-primary py-3 px-5">Project Folder Link</a></p> -->
-					  </div>
+					  <!-- </div>
 					</div>
-				  </div>
+				  </div> -->
 
 				  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 					<div class="block-18">
@@ -855,7 +886,7 @@
 				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 				  <div class="block-18">
 					<div class="text">
-					  <span><h5>Fine-Tuning></span>
+					  <span><h5>Fine-Tuning(LoRA)</h5></span>
 					  <!-- <p><a href="https://drive.google.com/drive/folders/16QlyPpLdZ3_JWG4IsB8I8orZYOrEROBE?usp=drive_link" class="btn btn-primary py-3 px-5">Project Folder Link</a></p> -->
 					</div>
 				  </div>
@@ -868,6 +899,8 @@
 					</div>
 				  </div>
 				</div>
+
+				<br>
 				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 				  <div class="block-18">
 					<div class="text">
@@ -973,6 +1006,7 @@
 		</div>
 	  </div>
 	  <div class="row d-flex">
+	    <div class="table-responsive-container">
 		<table border="2" cellpadding="10" cellspacing="0" style="width: 100%; text-align: left;">
 		  <thead>
 			<tr>
@@ -1027,13 +1061,14 @@
 			  <td>N/A</td>
 			  <td>N/A</td>
 			</tr> -->
-			<tr>
+			<!-- <tr>
 				<td>Master Generative-AI Professional Level LLM Application Development</td>
 				<td>Eurone.one</td>
 			  <td>Ongoing</td>
-			</tr>
+			</tr> -->
 		  </tbody>
 		</table>
+		</div>
 	  </div>
 	</div>
   </section>
